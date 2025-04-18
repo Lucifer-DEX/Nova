@@ -1,0 +1,25 @@
+{
+  "name": "nova",
+  "version": "1.0.0",
+  "description": "NovaBot - A lightning-fast WhatsApp AI assistant with ChatGPT, fun commands, and automation features. Powered by Node.js & Baileys.",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js --deep-monitoring --attach --name nova",
+    "stop": "pm2 stop nova",
+    "restart": "pm2 restart nova"
+  },
+  "author": "Genux Official",
+  "license": "MIT",
+  "dependencies": {
+    "@genuxofficial/baileys": "npm:@genuxofficial/nova",
+    "@hapi/boom": "^10.0.1",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "file-type": "^16.5.3",
+    "fs": "^0.0.1-security",
+    "mongodb": "^6.15.0",
+    "node-fetch": "^2.6.11",
+    "pino": "^9.6.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
